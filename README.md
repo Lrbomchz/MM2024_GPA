@@ -4,6 +4,8 @@ This repository includes the supporting code for:
 
 Xi, G., Tian, Y., Yang, M., Zhang, L., Que, X., & Wang, W. (2024, October). Global Patch-wise Attention is Masterful Facilitator for Masked Image Modeling. ACM MM 2024.
 
+Our code builds upon [MAE](https://github.com/facebookresearch/mae) and [HPM](https://github.com/Haochen-Wang409/HPM). We would like to express our heartfelt thanks to the authors and maintainers of these projects for their excellent work and open-source contributions.
+
 ## Requirements
 
 python==3.8

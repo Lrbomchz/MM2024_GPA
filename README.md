@@ -46,3 +46,16 @@ OMP_NUM_THREADS=1  python  -m torch.distributed.launch --nproc_per_node=2 main_p
 OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=2 main_finetune.py --accum_iter 4 --batch_size 128 --model vit_base_patch16 --epochs 100 --blr 5e-4 --layer_decay 0.8 --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 --dist_eval --data_path /path/to/ImageNet --output_dir /path/to/output_dir/ --finetune /path/to/pretrained_maae_checkpoint
 ```
 
+---
+## Citation
+
+If you find our work helpful, please cite us:
+```bibtex
+@inproceedings{xi2024global,
+  title={Global Patch-wise Attention is Masterful Facilitator for Masked Image Modeling},
+  author={Xi, Gongli and Tian, Ye and Yang, Mengyu and Zhang, Lanshan and Que, Xirong and Wang, Wendong},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={1751--1760},
+  year={2024}
+}
+```
